@@ -11,3 +11,6 @@ logs/
 dist/
 out/
 .env
+
+# Local Netlify folder
+.netlify

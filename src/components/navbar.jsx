@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import vanLangLogo from "../assets/text/Van Lang Tour.png";
+import signUpButton from "../assets/buttons/sign up.png";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +12,7 @@ function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50 bg-black/80 bg-opacity-90 text-white p-4 md:p-6">
       <div className="container mx-auto flex items-center justify-between">
 
-        <img className="w-32 md:w-50" src="/src/assets/text/Van Lang Tour.png" alt="Van Lang Tour Logo" />
+        <img className="w-32 md:w-50" src={vanLangLogo} alt="Van Lang Tour Logo" />
 
       
         <button
@@ -38,7 +41,7 @@ function Navbar() {
             </li>
             <li>
               <Link to="/signup" aria-label="Sign Up" onClick={() => setIsOpen(false)}>
-                <img className="w-16 md:w-20 cursor-pointer" src="/src/assets/buttons/sign up.png" alt="Sign Up Button" />
+                <img className="w-16 md:w-20 cursor-pointer" src={signUpButton} alt="Sign Up Button" />
               </Link>
             </li>
           </ul>
